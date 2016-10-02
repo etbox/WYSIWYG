@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>editor</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome-ie7.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/common.css">
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/common.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="editControls">
+			<div class="undo btn-group">
+				<a class='btn btn-default' data-role='undo' href='#'><i class='icon-undo'></i></a>
+				<a class='btn btn-default' data-role='redo' href='#'><i class='icon-repeat'></i></a>
+			</div>
+			<div class="basicstyles btn-group">
+				<a class='btn btn-default' data-role='bold' href='#'><b>Bold</b></a>
+				<a class='btn btn-default' data-role='italic' href='#'><em>Italic</em></a>
+				<a class='btn btn-default' data-role='underline' href='#'><u>Underline</u></a>
+				<a class='btn btn-default' data-role='strikeThrough' href='#'><strike>strike</strike></a>
+				<a class='btn btn-default' data-role='subscript' href='#'><i class='icon-subscript'></i></a>
+				<a class='btn btn-default' data-role='superscript' href='#'><i class='icon-superscript'></i></a>
+			</div>
+			<div class="list btn-group">
+				<a class='btn btn-default' data-role='insertUnorderedList' href='#'><i class='icon-list-ul'></i></a>
+				<a class='btn btn-default' data-role='insertOrderedList' href='#'><i class='icon-list-ol'></i></a>
+			</div>
+			
+		</div>
+		<div class="divs" id="editor" contenteditable>
+			<h1>This is a title!</h1>
+			<p>This is just some example text to start us off</p>
+		</div>
+		<div class="editControls">
+			<div class="sourceCode btn-group">
+				<a class='btn btn-default' data-role='code' href='#'><i class="icon-code"></i></a>
+			</div>
+		</div>
+		<div class="divs" id="sourceArea"></div>
+	</div>
+</body>
+</html>
